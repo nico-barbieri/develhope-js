@@ -5,7 +5,7 @@ function printName() {
         setTimeout(() => {
         console.log(helloName);;
         }, 1000)
-    }
+    };
     
     return inner;
 };
