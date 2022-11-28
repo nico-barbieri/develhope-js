@@ -1,4 +1,4 @@
-# Conditionals & Loops - Exercise 2
+# Conditionals & Loops - Exercise 1
 
 Create a function named `calculateSalary` which takes an input parameter, and calculates and returns the corresponding salary. You must use the `switch` switch statement.
 For each role the corresponding salary is as follows:
