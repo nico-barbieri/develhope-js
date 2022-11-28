@@ -1,3 +1,5 @@
+//An alternative version made using map method can be found in ex12
+
 function nicknameMap(persons) {
   let nicknames = [];
   persons.forEach(person => {
