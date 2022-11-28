@@ -1,5 +1,11 @@
 function calculateAverageAge(persons) {
-  // ...
+  const averageAge = Math.round(persons.reduce((average, person, index) => {
+    //divide the sum by n element only if it's the last iteration
+    return (index==(persons.length-1))
+      ? ((average + person.age)/persons.length) 
+      : (average + person.age);
+  }, 0));
+  return averageAge;
 }
 
 const persons = [
