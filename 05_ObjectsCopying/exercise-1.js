@@ -15,7 +15,7 @@ console.log(person2);
 
 /*In this code, there's no difference between a change made to person1 or person2. This happens
 because both person1 and person2 point to the same object. Since person1 is not a primitive, its values
-are allocated in the Heap and person1 (which is in the Stack) "contains" the reference to them.
+are allocated in the Heap Memory and person1 (which is in the Stack) "contains" the reference to them.
 So, when we write person2=person1, we actually create a variable named person2 which contains
 the same address of person1 and that results in two variables pointing to the same allocation in the Heap or,
 in other words, to the same object. When we change a person2 property we change the property stored
