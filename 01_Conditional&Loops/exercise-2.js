@@ -3,6 +3,7 @@
 // cto => 1800
 // developer => 1500
 // default => 1000
+
 function calculateSalary(role) {
   switch (role) {
     case 'ceo': 
