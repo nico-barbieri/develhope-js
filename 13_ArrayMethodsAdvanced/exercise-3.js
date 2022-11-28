@@ -6,7 +6,7 @@ function calculateAverageAge(persons) {
       : (average + person.age);
   }, 0));
   return averageAge;
-}
+};
 
 const persons = [
   { name: 'Paul', age: 16 },
