@@ -6,7 +6,7 @@ function nicknameMap(persons) {
     nicknames.push(person.name + "-" + person.age);
   });
   return nicknames;
-}
+};
 
 const persons = [
   { name: 'Paul', age: 16 },
