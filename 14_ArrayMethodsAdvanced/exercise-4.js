@@ -1,6 +1,10 @@
 function uncompletedNotes(notes) {
-  // ...
-}
+  let uncompleted = [];
+  notes.forEach(note => {
+    uncompleted.push((note.todos).filter(todoNote => todoNote.done === false))
+  });
+  return uncompleted;
+};
 
 const notes = [
   {
@@ -53,3 +57,7 @@ const notes = [
 ];
 
 uncompletedNotes(notes);
+
+console.log(uncompletedNotes(notes));
+
+console.log(uncompletedNotes(notes).flat()); //to output every uncompleted note in a single list of note if needed.
