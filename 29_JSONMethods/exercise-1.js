@@ -8,4 +8,14 @@ class Person {
 }
 
 const developer = new Person(1, 'Mario', 'Rossi', 25);
-// Print developer as json object
+console.log(JSON.stringify(developer));
+
+/* Storing JSON object in a variable:
+
+const developerJSON = JSON.stringify(developer);
+console.log(developerJSON);
+
+*/
+
+
+
