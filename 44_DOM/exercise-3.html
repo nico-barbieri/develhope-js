@@ -20,5 +20,21 @@
 </html>
 
 <script>
-  // code here
+  const labels = document.getElementById('container').querySelectorAll('label');
+  const inputs = document.getElementById('container').querySelectorAll('input');
+  let inputLabelPairs;
+
+  //creating an object 
+  //(since content of labels has a colon, object keys name have a colon too, resulting in a double colon 
+  //when object is printed. To avoid this, we could use "replace" as follows)
+  for (let i = 0; i < labels.length; i++) {
+    inputLabelPairs = {...inputLabelPairs, [labels[i].innerHTML.replace(':', '')]: inputs[i].value};
+  }
+  console.log(inputLabelPairs);
+
+  //without creating an object:
+  for (let i = 0; i < labels.length; i++) {
+    console.log(`${labels[i].innerHTML} ${inputs[i].value}`); 
+  };
+
 </script>
