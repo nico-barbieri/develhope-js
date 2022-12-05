@@ -4,7 +4,7 @@ const graterThanTen = new Promise((resolve, reject) => {
     if (number > 10) {
         resolve(number);
     } else {
-        reject(number)
+        reject(new Error ('Number is not greater than 10.'))
     }
 })
 
