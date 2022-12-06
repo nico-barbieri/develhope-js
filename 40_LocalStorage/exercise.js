@@ -3,3 +3,9 @@ const user = {
   name: "John",
   age: 25,
 };
+
+function storeLocal(obj) {
+  localStorage.setItem('user', JSON.stringify.obj);
+};
+
+storeLocal(user);
