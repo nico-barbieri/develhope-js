@@ -5,7 +5,7 @@ const user = {
 };
 
 function storeLocal(obj) {
-  localStorage.setItem('user', JSON.stringify.obj);
+  localStorage.setItem('user', JSON.stringify(obj));
 };
 
 storeLocal(user);
